@@ -3,8 +3,7 @@
 ## By Boma Lawson 06/21/2019
 - name: Perfoming Patch for Linux Servers
   hosts: localhost
-  remote_user: boma
-  become: true
+  become: yes
   
   tasks:
     # purpose of this task to check if application is running or stopped

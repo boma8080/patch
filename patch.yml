@@ -1,6 +1,6 @@
 ########
 ---
-- name: upgrade and reboot server
+- name: update & upgrade server
   hosts: "*"
   become: true
 
@@ -13,5 +13,3 @@
       when: ansible_os_family == "Debian"
       apt: upgrade=dist update_cache=yes
 
-    - name: reboot server
-      command: /sbin/reboot
